@@ -4,5 +4,5 @@
 - Test answers for the Tavernlight Games Software Developer position.
 
 note:
-these include new/modified files from the TFS 1.4 and OTClient projects
+The answers q5-q7 are new/modified fiels from TFS or OTClient
 
