@@ -55,37 +55,34 @@ function reverseArea(area)
 	local reverseArea = area
 	local areaCount = #area
 
+	-- for every area
 	for key, value in ipairs(area) do
 
 		local reverseMatrix = {}
 		local areaHeight = #area[key] 
 
+		-- area row
 		for keyi, valuei in ipairs(area[key]) do
 
 			local reverseRow = {}
 			local areaWidth = #area[key][keyi]
 
+		-- int inside the row
 			for keyj, valuej in ipairs(area[key][keyi]) do
+				-- place them reverse in the new row to flip left-right
 				reverseRow[areaWidth+1-keyj] = valuej
 			end
-
+			-- place reverse in the new matrix to flip up-down
 			reverseMatrix[areaHeight+1-keyi] = reverseRow
 		end
 
+		-- same order of areas
 		reverseArea[key] = reverseMatrix
 	end
 	return reverseArea
 end 
-area = reverseArea(area)
 
-function ReverseTable(t) 
-	local reversedTable = {} 
-	local itemCount = #t 
-	for k, v in ipairs(t) do 
-		reversedTable[itemCount + 1 - k] = v 
-	end 
-	return reversedTable 
-end 
+area = reverseArea(area)
 
 -- we loop the 4 areas 3 times
 local combat = {
