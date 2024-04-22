@@ -1,0 +1,10 @@
+Module
+  name: game_jumpmodal
+  description: Contains extended protocol related stuff.
+  reloadable: false
+  sandboxed: true
+  scripts: [jumpmodal]
+  @onLoad: init()
+  @onUnload: terminate()
+  autoload: true
+  autoload-priority: 1001
