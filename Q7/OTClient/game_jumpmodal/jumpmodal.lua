@@ -81,7 +81,8 @@ function moveVertical(button)
     -- position the button at the far right
     marginRight = 0
 
-    -- we move the button panel up/down instead of the button as its about the same height as the button
+    -- we move the button panel up/down instead of the button as its about the same height as the button, 
+    -- the result is the same but this is easier than positioning the button manually outside the panel
     buttonsPanel:setMarginBottom(marginBottom)
 
     -- stop and restart the button horizontal movement
