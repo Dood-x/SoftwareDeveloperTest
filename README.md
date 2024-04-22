@@ -11,4 +11,4 @@ note: some clients / positions do not render the spell properly, ive used anothe
 - to activate Q7 dialog type talkaction /jumpwindow in chat
 <br />
 <br />
-note: The answers q5-q7 are new and modified fiels from TFS and OTClient at their relative path in regards to the TFS and OTClient root.
+note: The answers q5-q7 are new and modified fields from TFS and OTClient at their relative path in regards to the TFS and OTClient root.
